@@ -1,97 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Responsive Website</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .center{
+            justify-content: center;
+            
+        }
+    </style>
 
 </head>
+
 <body>
-    <header class="container mx-auto">
-        <nav>
+    <header class="  container mx-auto mb-28">
+        <nav class="pr-3">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a><span class="text-red-600">Home</span></a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
                     </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <a class="btn btn-ghost text-xl">Hockey<span class="text-red-600">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
                         <li><a><span class="text-red-600">Home</span></a></li>
                         <li><a>About</a></li>
                         <li><a>Pages</a></li>
                         <li><a>Blog</a></li>
                         <li><a>Contact</a></li>
                     </ul>
-                  </div>
-                  <a class="btn btn-ghost text-xl">Hockey<span class="text-red-600">’</span>s</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a><span class="text-red-600">Home</span></a></li>
-                    <li><a>About</a></li>
-                    <li><a>Pages</a></li>
-                    <li><a>Blog</a></li>
-                    <li><a>Contact</a></li>
-                  </ul>
                 </div>
                 <div class="navbar-end gap-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <!-- search icon here -- problem -->
                         <g clip-path="url(#clip0_5_6)">
-                          <path d="M3 10C3 10.9193 3.18106 11.8295 3.53284 12.6788C3.88463 13.5281 4.40024 14.2997 5.05025 14.9497C5.70026 15.5998 6.47194 16.1154 7.32122 16.4672C8.1705 16.8189 9.08075 17 10 17C10.9193 17 11.8295 16.8189 12.6788 16.4672C13.5281 16.1154 14.2997 15.5998 14.9497 14.9497C15.5998 14.2997 16.1154 13.5281 16.4672 12.6788C16.8189 11.8295 17 10.9193 17 10C17 9.08075 16.8189 8.1705 16.4672 7.32122C16.1154 6.47194 15.5998 5.70026 14.9497 5.05025C14.2997 4.40024 13.5281 3.88463 12.6788 3.53284C11.8295 3.18106 10.9193 3 10 3C9.08075 3 8.1705 3.18106 7.32122 3.53284C6.47194 3.88463 5.70026 4.40024 5.05025 5.05025C4.40024 5.70026 3.88463 6.47194 3.53284 7.32122C3.18106 8.1705 3 9.08075 3 10Z" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M21 21L15 15" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path
+                                d="M3 10C3 10.9193 3.18106 11.8295 3.53284 12.6788C3.88463 13.5281 4.40024 14.2997 5.05025 14.9497C5.70026 15.5998 6.47194 16.1154 7.32122 16.4672C8.1705 16.8189 9.08075 17 10 17C10.9193 17 11.8295 16.8189 12.6788 16.4672C13.5281 16.1154 14.2997 15.5998 14.9497 14.9497C15.5998 14.2997 16.1154 13.5281 16.4672 12.6788C16.8189 11.8295 17 10.9193 17 10C17 9.08075 16.8189 8.1705 16.4672 7.32122C16.1154 6.47194 15.5998 5.70026 14.9497 5.05025C14.2997 4.40024 13.5281 3.88463 12.6788 3.53284C11.8295 3.18106 10.9193 3 10 3C9.08075 3 8.1705 3.18106 7.32122 3.53284C6.47194 3.88463 5.70026 4.40024 5.05025 5.05025C4.40024 5.70026 3.88463 6.47194 3.53284 7.32122C3.18106 8.1705 3 9.08075 3 10Z"
+                                stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M21 21L15 15" stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
                         </g>
                         <defs>
-                          <clipPath id="clip0_5_6">
-                            <rect width="24" height="24" fill="white"/>
-                          </clipPath>
+                            <clipPath id="clip0_5_6">
+                                <rect width="24" height="24" fill="white" />
+                            </clipPath>
                         </defs>
-                      </svg>
+                    </svg>
 
                     <button class="btn btn-error text-white">Get Ticket</button>
 
                 </div>
-              </div>
+            </div>
         </nav>
         <!-- carousel bar here -->
-        <div class="carousel w-full">
-            <div id="slide1" class="carousel-item relative w-full">
-              <img src="./Images/1.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle bg-gray-900 text-white">❮</a> 
-                <a href="#slide2" class="btn btn-circle bg-gray-900 text-white">❯</a>
-              </div>
-            </div> 
-            <div id="slide2" class="carousel-item relative w-full">
-              <img src="./Images/1.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle bg-gray-900 text-white">❮</a> 
-                <a href="#slide3" class="btn btn-circle bg-gray-900 text-white">❯</a>
-              </div>
-            </div> 
-            <div id="slide3" class="carousel-item relative w-full">
-              <img src="./Images/1.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide2" class="btn btn-circle bg-gray-900 text-white">❮</a> 
-                <a href="#slide4" class="btn btn-circle bg-gray-900 text-white">❯</a>
-              </div>
-            </div> 
-            <div id="slide4" class="carousel-item relative w-full">
-              <img src="./Images/1.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide3" class="btn btn-circle bg-gray-900 text-white">❮</a> 
-                <a href="#slide1" class="btn btn-circle bg-gray-900 text-white">❯</a>
-              </div>
+        <div class="pl-5 pr-5">
+            <div class="  carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle bg-gray-900 text-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-gray-900 text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle bg-gray-900 text-white">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-gray-900 text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle bg-gray-900 text-white">❮</a>
+                        <a href="#slide4" class="btn btn-circle bg-gray-900 text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle bg-gray-900 text-white">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-gray-900 text-white">❯</a>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
     </header>
     <main>
+        <!-- Radial section header and p. -->
+        <section class="container mx-auto mb-28 mt-4">
 
+            <!-- Radial section header and p. -->
+            <div class="mt-8">
+                <h2 class="text-center font-extrabold ">Professional Hockeys Club</h2>
+                <p class="text-center font-semibold text-[#13131899]">Dit amet consectetur. Condimentum dignissim
+                    adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin. </p>
+
+            </div>
+            <!-- Radial start  (..center e nibo kivabe..?) -->
+
+            <div class="lg:flex justify-center gap-6 ">
+                <!-- radial (1) -->
+                <div class="align-middle  ">
+                    <div class="radial-progress justify-center  items-center" style="--value:87;" role="progressbar">87%
+                    </div>
+                    <h2 class="text-center text-[#131318] font-semibold ">Prayer Facility</h2>
+                    <p class="text-center font-semibold text-[#13131899]">Amet consectetur. Condimentum <br> dignissim
+                        adipiscing . </p>
+
+                </div>
+
+                <div><!-- radial (2) -->
+                    <div class="radial-progress" style="--value:95;" role="progressbar">95%</div>
+                    <h2 class=" text-[#131318] font-semibold ">Prayer Facility</h2>
+                    <p class=" font-semibold text-[#13131899]">Amet consectetur. Condimentum <br> dignissim adipiscing .
+                    </p>
+
+                </div>
+                <div><!-- radial (3) -->
+                    <div class="radial-progress" style="--value:80;" role="progressbar">90%</div>
+                    <h2 class=" text-[#131318] font-semibold ">Prayer Facility</h2>
+                    <p class=" font-semibold text-[#13131899]">Amet consectetur. Condimentum <br> dignissim adipiscing .
+                    </p>
+
+                </div>
+                <div><!-- radial (4) -->
+                    <div class="radial-progress" style="--value:80;" role="progressbar">80%</div>
+                    <h2 class=" text-[#131318] font-semibold ">Prayer Facility</h2>
+                    <p class=" font-semibold text-[#13131899]">Amet consectetur. Condimentum <br> dignissim adipiscing .
+                    </p>
+
+                </div><!-- Radial end  -->
+
+            </div>
+        </section>
+        <!-- section (2) bg-img/3 grid -->
+        <section class="container mx-auto mb-28 mt-4">
+            <!-- section head-01 -->
+            <div class="m-5">
+                <h2 class="text-center font-extrabold ">Professional Hockeys Club</h2>
+                <p class="text-center font-semibold text-[#13131899]">Dit amet consectetur. Condimentum dignissim
+                    adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin. </p>
+
+            </div>
+            <div class="grid grid-cols-1 pl-4 pr-4 lg:grid-cols-2 gap-6 lg:mt-8">
+                <!-- img 1 -->
+                <div class="hero min-h-screen rounded-xl" style="background-image: url(./Images/2.png);">
+                    <div class="hero-overlay bg-opacity-60 rounded-xl"></div>
+                    <div class="hero-content  text-neutral-content">
+                        <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                            <p class="mb-5">With the growing amount of content that people regularly absorb each day,
+                                20-word sentences are now considered ideal for comprehension.</p>
+                            <button class="btn btn-error text-white">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- img 2 -->
+                <div class="hero min-h-screen rounded-xl" style="background-image: url(./Images/3.png);">
+                    <div class="hero-overlay bg-opacity-60 rounded-xl"></div>
+                    <div class="hero-content  text-neutral-content">
+                        <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                            <p class="mb-5">Ideally for copyediting clarity, sentences should be no more than 20 words
+                                but of course, all good rules are made to be broken when it suits your style</p>
+                            <button class="btn btn-error text-white">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- img 3 -->
+                <div class=" lg:col-span-2 hero min-h-screen rounded-xl" style="background-image: url(./Images/4.png);">
+                    <div class="hero-overlay bg-opacity-60 rounded-xl"></div>
+                    <div class="hero-content  text-neutral-content">
+                        <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                            <p class="mb-5">Lengthy sentences normally require re-reading for clarity to occur, and this
+                                lengthens the time it takes for consideration and comprehension</p>
+                            <button class="btn btn-error text-white">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section (3) card-img/6 grid ///// baki ache -->
+        <section>
+            <div class="m-5">
+                <h2 class="text-center font-extrabold ">Our New Products</h2>
+                <p class="text-center font-semibold text-[#13131899]">Dit amet consectetur. Condimentum dignissim
+                    adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+
+            </div>
+        </section>
+        <!-- section 4 FAQ -->
+
+        <section class="container mx-auto border-2 border-[#1313181A] rounded-xl p-8">
+            <div class="lg:flex gap-6">
+                <img src="./Images/11.png" alt="">
+                <div>
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content">
+                            <p>However, be aware that a possible down-side to the 20-word sentence is clunky, jerky
+                                sentences. This only applies though</p>
+                        </div>
+                    </div><hr>
+                    <div class="collapse collapse-plus ">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Hockey Training
+                        </div>
+                        <div class="collapse-content">
+                            <p>So if you are aiming for clear, concise, comprehensible writing (and reading)</p>
+                        </div>
+                    </div><hr>
+                    <div class="collapse collapse-plus ">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Private Lessons
+                        </div>
+                        <div class="collapse-content">
+                            <p>possible down-side to the 20-word sentence is clunky, jerky sentences. </p>
+                        </div>
+                    </div><hr>
+                    <div class="collapse collapse-plus ">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Ski Touring
+                        </div>
+                        <div class="collapse-content">
+                            <p>So if you are aiming for clear, concise, comprehensible writing (and reading)</p>
+                        </div>
+                    </div><hr>
+                    <div class="collapse collapse-plus ">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Booking
+                        </div>
+                        <div class="collapse-content">
+                            <p>possible down-side to the 20-word sentence is clunky, jerky sentences. </p>
+                    </div><hr>
+                    <div class="collapse collapse-plus ">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-medium">
+                                Pricings
+                            </div>
+                            <div class="collapse-content">
+                                <p>possible down-side to the 20-word sentence is clunky, jerky sentences. </p>
+                            </div>
+                    </div>
+                </div><hr>
+            </div>
+        </section>
+        <section class="container mx-auto">
+            <!-- hed and p.-->
+            <div>
+                <div class="m-5">  
+                 
+                    <h2 class="text-center font-extrabold ">Get In Touch</h2>
+                    <p class="text-center font-semibold text-[#13131899]">However, be aware that a possible down-side to the 20-word sentence is clunky, <br> jerky sentences. This only applies though if you don't go back and massage your work  </p>
+    
+                </div>
+                <!-- fast div 3 pic-->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mx-auto">
+                    <!-- here 3div -->
+                    <div class=" border-2 border-[#1313181A] rounded-xl p-8  ">
+                        <div>
+                            <div class="bg-[#BCED6D1A] w-80 h-52 rounded-xl ju mb-4">
+                            <img src="./Images/call-Group-1 .png" alt="">
+                            <p class="font-semibold text-[#13131899]">Phone number :</p>
+                            <h6 class="text-[#131318] font-semibold">+880 1729007747</h6>
+                        </div>
+                        <div class="bg-[#FDDD5F1A] rounded-xl  w-80 h-52 mb-4">
+                            <img src="./Images/call-Group-2 .png" alt="">
+                            <p class="font-semibold text-[#13131899]">Email :</p>
+                            <h6 class="text-[#131318] font-semibold">mdhamza9407510@gmail.com</h6>
+                        </div>
+                        <div class="bg-[#629CF31A] rounded-xl  w-80 h-52 ">
+                            <img src="./Images/call-Group-3 .png" alt="">
+                            <p class="font-semibold text-[#13131899]">Location :</p>
+                            <h6 class="text-[#131318] font-semibold"> 152/1 Mohakhali Wireless Gate</h6>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- second div 3 pic-->
+                    
+                        
+                            <!-- <div class="hero-content flex-col lg:flex-row-reverse">
+                               -->
+                              <div class="card shrink-0 w-full p-5  ">
+                               
+                                    <!-- fast div name and email  -->
+                                  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                                    <div class="form-control">   
+                                        <label class="label">
+                                          <span class="label-text">Your Name</span>
+                                        </label>
+                                        <input type="text" placeholder="Enter Your Name" class="input input-bordered" required />
+                                      </div>
+                                      <div class="form-control">
+                                        <label class="label">
+                                          <span class="label-text">Your Email</span>
+                                        </label>
+                                        <input type="email" placeholder="Enter Your Email" class="input input-bordered" required />
+                                      </div>
+                                  </div>
+                                  <!-- second div subject and phn  -->
+                                  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+                                    <div class="form-control">   
+                                        <label class="label">
+                                          <span class="label-text">subject Name</span>
+                                        </label>
+                                        <input type="text" placeholder="Enter Your subject" class="input input-bordered" required />
+                                      </div>
+                                      <div class="form-control">
+                                        <label class="label">
+                                          <span class="label-text">Phone Number</span>
+                                        </label>
+                                        <input type="text" placeholder="Enter Your Phone Number" class="input input-bordered" required />
+                                      </div>
+                                  </div>
+                                  <div class="form-control mt-6 ">
+                                    <label class="label">
+                                      <span class="label-text">Message</span>
+                                    </label>
+                                    <input class="bg-[#13131808] h-72 rounded-xl" type="text" placeholder ="writing a Message" class="input input-bordered align-top" />
+                                  </div>
+                                  <div class="form-control mt-6">
+                                    <button class="btn btn-error text-white">Send Message</button>
+                                  </div>
+                                
+                              </div>
+                            <!-- </div>
+                           <!-- social media -->
+                       
+                </div>
+                <div class=" text-center  mx-auto bg-[#13131808] justify-center h-36 rounded-xl mt-6 ">
+                    <h3 class="mt-6 pt-5 text-[#131318] font-extrabold">social Media</h3>
+                    <div class="">
+                        <img class="center pl-32 lg:pl-96 lg:ml-80 mt-6 lg:px-96" src="./Images/sm.svg" alt="">
+                    </div>
+                   </div> 
+            </div>
+            
+            
+        </section>
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>
