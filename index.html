@@ -8,9 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .center{
+        .center {
             justify-content: center;
-            
+
         }
     </style>
 
@@ -72,7 +72,7 @@
             </div>
         </nav>
         <!-- carousel bar here -->
-        <div class="pl-5 pr-5">
+        <div class="pl-5 pr-5 relative">
             <div class="  carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="./Images/1.png" class="w-full" />
@@ -103,6 +103,12 @@
                     </div>
                 </div>
             </div>
+            <!-- this iis black-bg and white  writing bonus banner  -->
+            <div class=" absolute  p-8 bg-[#131318] text-base-content rounded-xl w-96 h-32 ">
+                <h2 class=" font-extrabold text-[#FFF] ">Meet all the heroes from the field</h2>
+                 <p class="font-semibold text-[#FFFFFF99]">However, be the word sentence is clunky, <br> jerky sentences. This only applies  this is somthig
+                 </p>
+            </div>
         </div>
     </header>
     <main>
@@ -110,42 +116,42 @@
         <section class="container mx-auto mb-28 mt-4">
 
             <!-- Radial section header and p. -->
-            <div class="mt-8">
+            <div class="mt-8 border-b-2 border-t-2 border-t-neutral-300 border-dotted pt-6 pb-6">
                 <h2 class="text-center font-extrabold ">Professional Hockeys Club</h2>
                 <p class="text-center font-semibold text-[#13131899]">Dit amet consectetur. Condimentum dignissim
                     adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin. </p>
 
             </div>
-            <!-- Radial start  (..center e nibo kivabe..?) -->
+            <!-- Radial start  (..) -->
 
-            <div class="lg:flex justify-center gap-6 ">
+            <div class="lg:flex justify-center gap-6 mt-10 ">
                 <!-- radial (1) -->
-                <div class="align-middle  ">
-                    <div class="radial-progress justify-center  items-center" style="--value:87;" role="progressbar">87%
+                <div class="text-center  ">
+                    <div class="radial-progress text-red-600 rotate-[130deg] text-center" style="--value:87;" role="progressbar"><span class="text-[#131318] rotate-[-130deg] ">87%</span>
                     </div>
-                    <h2 class="text-center text-[#131318] font-semibold ">Prayer Facility</h2>
-                    <p class="text-center font-semibold text-[#13131899]">Amet consectetur. Condimentum <br> dignissim
+                    <h2 class=" text-[#131318] font-semibold ">Prayer Facility</h2>
+                    <p class=" font-semibold text-[#13131899]">Amet consectetur. Condimentum <br> dignissim
                         adipiscing . </p>
 
                 </div>
-
-                <div><!-- radial (2) -->
-                    <div class="radial-progress" style="--value:95;" role="progressbar">95%</div>
-                    <h2 class=" text-[#131318] font-semibold ">Prayer Facility</h2>
+<!-- radial (2) -->
+                <div class="text-center ">
+                    <div class="radial-progress text-[#49D293] rotate-[130deg] text-center" style="--value:95;" role="progressbar"><span class="text-[#131318] rotate-[-130deg] ">95%</span></div>
+                    <h2 class=" text-[#131318] font-semibold ">Experienced Coach</h2>
                     <p class=" font-semibold text-[#13131899]">Amet consectetur. Condimentum <br> dignissim adipiscing .
                     </p>
 
                 </div>
-                <div><!-- radial (3) -->
-                    <div class="radial-progress" style="--value:80;" role="progressbar">90%</div>
-                    <h2 class=" text-[#131318] font-semibold ">Prayer Facility</h2>
+                <div class="text-center "><!-- radial (3) -->
+                    <div class="radial-progress  text-orange-400 rotate-[130deg] text-center" style="--value:90;" role="progressbar"><span class="text-[#131318] rotate-[-130deg] ">90%</span></div>
+                    <h2 class=" text-[#131318] font-semibold ">Senior Player</h2>
                     <p class=" font-semibold text-[#13131899]">Amet consectetur. Condimentum <br> dignissim adipiscing .
                     </p>
 
                 </div>
-                <div><!-- radial (4) -->
-                    <div class="radial-progress" style="--value:80;" role="progressbar">80%</div>
-                    <h2 class=" text-[#131318] font-semibold ">Prayer Facility</h2>
+                <div class="text-center "><!-- radial (4) -->     
+                    <div class="radial-progress  text-[#4C8DF1] rotate-[130deg] text-center" style="--value:80;" role="progressbar"><span class="text-[#131318] rotate-[-130deg] ">80%</span></div>
+                    <h2 class=" text-[#131318] font-semibold ">Training Ground</h2>
                     <p class=" font-semibold text-[#13131899]">Amet consectetur. Condimentum <br> dignissim adipiscing .
                     </p>
 
@@ -156,7 +162,7 @@
         <!-- section (2) bg-img/3 grid -->
         <section class="container mx-auto mb-28 mt-4">
             <!-- section head-01 -->
-            <div class="m-5">
+            <div class="mt-8 border-b-2 border-t-2 border-t-neutral-300 border-dotted pt-6 pb-6">
                 <h2 class="text-center font-extrabold ">Professional Hockeys Club</h2>
                 <p class="text-center font-semibold text-[#13131899]">Dit amet consectetur. Condimentum dignissim
                     adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin. </p>
@@ -202,18 +208,752 @@
             </div>
         </section>
         <!-- section (3) card-img/6 grid ///// baki ache -->
-        <section>
-            <div class="m-5">
+        <section class="container mx-auto mt-8">
+            <div class="mt-8 border-b-2 border-t-2 border-t-neutral-300 border-dotted pt-6 pb-6">
                 <h2 class="text-center font-extrabold ">Our New Products</h2>
                 <p class="text-center font-semibold text-[#13131899]">Dit amet consectetur. Condimentum dignissim
                     adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
 
             </div>
+            <div class="w-11/12 mx-auto grid lg:grid-cols-2 grid-cols-1 gap-5 mt-8 ">
+                <!-- fast card start -->
+                <div class="flex p-6 border-2 border-[#1313181A] rounded-xl max-w-96 gap-4">
+                    <div class="card card-compact  bg-base-100  ">
+                        <!-- main card er image -->
+                        <!-- <div class="flex"> -->
+                        <div>
+                            <figure><img src="./Images/5.png" alt="Shoes" /></figure>
+                        </div>
+                    </div>
+                    <!-- card er image desine end -->
+                    <div class="card card-compact w-52 bg-base-100 ">
+                        <!-- uper rating start -->
+                        <div class="flex gap-4 ">
+                            <div class="flex gap-2">
+                                <!-- here star and 5.0  -->
+                                <div> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_6_192)">
+                                            <path
+                                                d="M12 17.7498L5.82799 20.9948L7.00699 14.1218L2.00699 9.25477L8.90699 8.25477L11.993 2.00177L15.079 8.25477L21.979 9.25477L16.979 14.1218L18.158 20.9948L12 17.7498Z"
+                                                fill="#F99808" stroke="#F99808" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_6_192">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="translate(0 -0.000244141)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg></div>
+                                <div>5.0</div>
+                            </div>
+                            <!-- here star and 5.0 end -->
+                            <!-- here eye and 20 start -->
+                            <div class="flex gap-2">
+                                <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_6_207)">
+                                            <path
+                                                d="M10 11.9998C10 12.5302 10.2107 13.0389 10.5858 13.414C10.9609 13.789 11.4696 13.9998 12 13.9998C12.5304 13.9998 13.0391 13.789 13.4142 13.414C13.7893 13.0389 14 12.5302 14 11.9998C14 11.4693 13.7893 10.9606 13.4142 10.5855C13.0391 10.2105 12.5304 9.99976 12 9.99976C11.4696 9.99976 10.9609 10.2105 10.5858 10.5855C10.2107 10.9606 10 11.4693 10 11.9998Z"
+                                                stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M21 11.9998C18.6 15.9998 15.6 17.9998 12 17.9998C8.4 17.9998 5.4 15.9998 3 11.9998C5.4 7.99976 8.4 5.99976 12 5.99976C15.6 5.99976 18.6 7.99976 21 11.9998Z"
+                                                stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_6_207">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="translate(0 -0.000244141)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg></div>
+                                <div>20</div>
+                            </div>
+                            <!-- here eye and 20 send -->
+                            <!-- here love and 20o start -->
+                            <div class="flex gap-2">
+                                <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_6_211)">
+                                            <path
+                                                d="M19.5 12.5717L12 19.9997L4.5 12.5717C4.0053 12.0904 3.61564 11.5118 3.35554 10.8724C3.09545 10.233 2.97056 9.5467 2.98873 8.85668C3.00691 8.16667 3.16776 7.48789 3.46115 6.86309C3.75455 6.23829 4.17413 5.681 4.69348 5.22633C5.21283 4.77165 5.8207 4.42944 6.47881 4.22123C7.13691 4.01302 7.831 3.94333 8.51736 4.01655C9.20373 4.08977 9.8675 4.30431 10.4669 4.64666C11.0662 4.98901 11.5882 5.45175 12 6.00575C12.4135 5.45577 12.9361 4.99707 13.5351 4.65835C14.1341 4.31964 14.7965 4.1082 15.4809 4.03727C16.1654 3.96634 16.8571 4.03745 17.5128 4.24614C18.1685 4.45484 18.774 4.79662 19.2915 5.25011C19.8091 5.7036 20.2274 6.25903 20.5204 6.88164C20.8134 7.50425 20.9747 8.18063 20.9943 8.86846C21.0139 9.55628 20.8913 10.2407 20.6341 10.879C20.377 11.5173 19.9909 12.0956 19.5 12.5777"
+                                                stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_6_211">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="translate(0 -0.000244141)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg></div>
+                                <div>200</div>
+                            </div>
+                        </div>
+                        <!-- uper rating end -->
+                        <div>
+                            <h2 class="font-extrabold ">Our New Products</h2>
+                            <p class=" font-medium text-xs bold text-[#13131899]"> Consectetur adipiscing aliquam<br>
+                                nullam proin. </p>
+                        </div>
+                        <!-- price and sell gari here start and flex -->
+                        <div class="flex gap-6">
+                            <p class="text-[#FF4240]">Price - $22.00</p>
+                            <div class="flex">
+                                <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_7_298)">
+                                            <path
+                                                d="M4 18.9993C4 19.5297 4.21071 20.0384 4.58579 20.4135C4.96086 20.7886 5.46957 20.9993 6 20.9993C6.53043 20.9993 7.03914 20.7886 7.41421 20.4135C7.78929 20.0384 8 19.5297 8 18.9993C8 18.4688 7.78929 17.9601 7.41421 17.5851C7.03914 17.21 6.53043 16.9993 6 16.9993C5.46957 16.9993 4.96086 17.21 4.58579 17.5851C4.21071 17.9601 4 18.4688 4 18.9993Z"
+                                                stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M12 16.9993H6V2.99927H4" stroke="#89898B" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M6 4.99927L20 5.99927L19.284 11.0103M14 12.9993H6" stroke="#89898B"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M21.121 20.1203C21.5406 19.7007 21.8265 19.1662 21.9423 18.5842C22.0581 18.0023 21.9988 17.399 21.7717 16.8508C21.5447 16.3026 21.1602 15.834 20.6668 15.5043C20.1734 15.1746 19.5934 14.9986 19 14.9986C18.4066 14.9986 17.8266 15.1746 17.3332 15.5043C16.8398 15.834 16.4553 16.3026 16.2283 16.8508C16.0012 17.399 15.9419 18.0023 16.0577 18.5842C16.1735 19.1662 16.4594 19.7007 16.879 20.1203C17.297 20.5393 18.004 21.1653 19 21.9993C20.051 21.1093 20.759 20.4833 21.121 20.1203Z"
+                                                stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M19 17.9993V18.0093" stroke="#89898B" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_7_298">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="translate(0 -0.000732422)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg></div>
+                                <p class="text-[#13131880]">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+
+                </div>
+
+                <!-- fast card end (jama,cap,boll)-->
+                <div>
+                    <div class="flex p-6 border-2 border-[#1313181A] rounded-xl max-w-96 gap-4">
+                        <div class="card card-compact  bg-base-100  ">
+                            <!-- main card er image -->
+                            <!-- <div class="flex"> -->
+                            <div>
+                                <figure><img src="./Images/6.png" alt="Shoes" /></figure>
+                            </div>
+                        </div>
+                        <!-- card er image desine end -->
+                        <div class="card card-compact w-52 bg-base-100 ">
+                            <!-- uper rating start -->
+                            <div class="flex gap-4 ">
+                                <div class="flex gap-2">
+                                    <!-- here star and 5.0  -->
+                                    <div> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0_6_192)">
+                                                <path
+                                                    d="M12 17.7498L5.82799 20.9948L7.00699 14.1218L2.00699 9.25477L8.90699 8.25477L11.993 2.00177L15.079 8.25477L21.979 9.25477L16.979 14.1218L18.158 20.9948L12 17.7498Z"
+                                                    fill="#F99808" stroke="#F99808" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_6_192">
+                                                    <rect width="24" height="24" fill="white"
+                                                        transform="translate(0 -0.000244141)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                    <div>5.0</div>
+                                </div>
+                                <!-- here star and 5.0 end -->
+                                <!-- here eye and 20 start -->
+                                <div class="flex gap-2">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0_6_207)">
+                                                <path
+                                                    d="M10 11.9998C10 12.5302 10.2107 13.0389 10.5858 13.414C10.9609 13.789 11.4696 13.9998 12 13.9998C12.5304 13.9998 13.0391 13.789 13.4142 13.414C13.7893 13.0389 14 12.5302 14 11.9998C14 11.4693 13.7893 10.9606 13.4142 10.5855C13.0391 10.2105 12.5304 9.99976 12 9.99976C11.4696 9.99976 10.9609 10.2105 10.5858 10.5855C10.2107 10.9606 10 11.4693 10 11.9998Z"
+                                                    stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M21 11.9998C18.6 15.9998 15.6 17.9998 12 17.9998C8.4 17.9998 5.4 15.9998 3 11.9998C5.4 7.99976 8.4 5.99976 12 5.99976C15.6 5.99976 18.6 7.99976 21 11.9998Z"
+                                                    stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_6_207">
+                                                    <rect width="24" height="24" fill="white"
+                                                        transform="translate(0 -0.000244141)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                    <div>20</div>
+                                </div>
+                                <!-- here eye and 20 send -->
+                                <!-- here love and 20o start -->
+                                <div class="flex gap-2">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0_6_211)">
+                                                <path
+                                                    d="M19.5 12.5717L12 19.9997L4.5 12.5717C4.0053 12.0904 3.61564 11.5118 3.35554 10.8724C3.09545 10.233 2.97056 9.5467 2.98873 8.85668C3.00691 8.16667 3.16776 7.48789 3.46115 6.86309C3.75455 6.23829 4.17413 5.681 4.69348 5.22633C5.21283 4.77165 5.8207 4.42944 6.47881 4.22123C7.13691 4.01302 7.831 3.94333 8.51736 4.01655C9.20373 4.08977 9.8675 4.30431 10.4669 4.64666C11.0662 4.98901 11.5882 5.45175 12 6.00575C12.4135 5.45577 12.9361 4.99707 13.5351 4.65835C14.1341 4.31964 14.7965 4.1082 15.4809 4.03727C16.1654 3.96634 16.8571 4.03745 17.5128 4.24614C18.1685 4.45484 18.774 4.79662 19.2915 5.25011C19.8091 5.7036 20.2274 6.25903 20.5204 6.88164C20.8134 7.50425 20.9747 8.18063 20.9943 8.86846C21.0139 9.55628 20.8913 10.2407 20.6341 10.879C20.377 11.5173 19.9909 12.0956 19.5 12.5777"
+                                                    stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_6_211">
+                                                    <rect width="24" height="24" fill="white"
+                                                        transform="translate(0 -0.000244141)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                    <div>200</div>
+                                </div>
+                            </div>
+                            <!-- uper rating end -->
+                            <div>
+                                <h2 class="font-extrabold ">Cap For Hockeys</h2>
+                                <p class=" font-medium text-xs bold text-[#13131899]"> Consectetur adipiscing
+                                    aliquam<br> nullam proin. </p>
+                            </div>
+                            <!-- price and sell gari here start and flex -->
+                            <div class="flex gap-6">
+                                <p class="text-[#FF4240]">Price - $22.00</p>
+                                <div class="flex">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0_7_298)">
+                                                <path
+                                                    d="M4 18.9993C4 19.5297 4.21071 20.0384 4.58579 20.4135C4.96086 20.7886 5.46957 20.9993 6 20.9993C6.53043 20.9993 7.03914 20.7886 7.41421 20.4135C7.78929 20.0384 8 19.5297 8 18.9993C8 18.4688 7.78929 17.9601 7.41421 17.5851C7.03914 17.21 6.53043 16.9993 6 16.9993C5.46957 16.9993 4.96086 17.21 4.58579 17.5851C4.21071 17.9601 4 18.4688 4 18.9993Z"
+                                                    stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M12 16.9993H6V2.99927H4" stroke="#89898B" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6 4.99927L20 5.99927L19.284 11.0103M14 12.9993H6"
+                                                    stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M21.121 20.1203C21.5406 19.7007 21.8265 19.1662 21.9423 18.5842C22.0581 18.0023 21.9988 17.399 21.7717 16.8508C21.5447 16.3026 21.1602 15.834 20.6668 15.5043C20.1734 15.1746 19.5934 14.9986 19 14.9986C18.4066 14.9986 17.8266 15.1746 17.3332 15.5043C16.8398 15.834 16.4553 16.3026 16.2283 16.8508C16.0012 17.399 15.9419 18.0023 16.0577 18.5842C16.1735 19.1662 16.4594 19.7007 16.879 20.1203C17.297 20.5393 18.004 21.1653 19 21.9993C20.051 21.1093 20.759 20.4833 21.121 20.1203Z"
+                                                    stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M19 17.9993V18.0093" stroke="#89898B" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_7_298">
+                                                    <rect width="24" height="24" fill="white"
+                                                        transform="translate(0 -0.000732422)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                    <p class="text-[#13131880]">Delivery Fee : Free</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+
+                    </div>
+                </div>
+                <div>
+                    <div class="flex p-6 border-2 border-[#1313181A] rounded-xl max-w-96 gap-4">
+                        <div class="card card-compact  bg-base-100  ">
+                            <!-- main card er image -->
+                            <!-- <div class="flex"> -->
+                            <div>
+                                <figure><img src="./Images/7.png" alt="Shoes" /></figure>
+                            </div>
+                        </div>
+                        <!-- card er image desine end -->
+                        <div class="card card-compact w-52 bg-base-100 ">
+                            <!-- uper rating start -->
+                            <div class="flex gap-4 ">
+                                <div class="flex gap-2">
+                                    <!-- here star and 5.0  -->
+                                    <div> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0_6_192)">
+                                                <path
+                                                    d="M12 17.7498L5.82799 20.9948L7.00699 14.1218L2.00699 9.25477L8.90699 8.25477L11.993 2.00177L15.079 8.25477L21.979 9.25477L16.979 14.1218L18.158 20.9948L12 17.7498Z"
+                                                    fill="#F99808" stroke="#F99808" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_6_192">
+                                                    <rect width="24" height="24" fill="white"
+                                                        transform="translate(0 -0.000244141)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                    <div>5.0</div>
+                                </div>
+                                <!-- here star and 5.0 end -->
+                                <!-- here eye and 20 start -->
+                                <div class="flex gap-2">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0_6_207)">
+                                                <path
+                                                    d="M10 11.9998C10 12.5302 10.2107 13.0389 10.5858 13.414C10.9609 13.789 11.4696 13.9998 12 13.9998C12.5304 13.9998 13.0391 13.789 13.4142 13.414C13.7893 13.0389 14 12.5302 14 11.9998C14 11.4693 13.7893 10.9606 13.4142 10.5855C13.0391 10.2105 12.5304 9.99976 12 9.99976C11.4696 9.99976 10.9609 10.2105 10.5858 10.5855C10.2107 10.9606 10 11.4693 10 11.9998Z"
+                                                    stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M21 11.9998C18.6 15.9998 15.6 17.9998 12 17.9998C8.4 17.9998 5.4 15.9998 3 11.9998C5.4 7.99976 8.4 5.99976 12 5.99976C15.6 5.99976 18.6 7.99976 21 11.9998Z"
+                                                    stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_6_207">
+                                                    <rect width="24" height="24" fill="white"
+                                                        transform="translate(0 -0.000244141)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                    <div>20</div>
+                                </div>
+                                <!-- here eye and 20 send -->
+                                <!-- here love and 20o start -->
+                                <div class="flex gap-2">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0_6_211)">
+                                                <path
+                                                    d="M19.5 12.5717L12 19.9997L4.5 12.5717C4.0053 12.0904 3.61564 11.5118 3.35554 10.8724C3.09545 10.233 2.97056 9.5467 2.98873 8.85668C3.00691 8.16667 3.16776 7.48789 3.46115 6.86309C3.75455 6.23829 4.17413 5.681 4.69348 5.22633C5.21283 4.77165 5.8207 4.42944 6.47881 4.22123C7.13691 4.01302 7.831 3.94333 8.51736 4.01655C9.20373 4.08977 9.8675 4.30431 10.4669 4.64666C11.0662 4.98901 11.5882 5.45175 12 6.00575C12.4135 5.45577 12.9361 4.99707 13.5351 4.65835C14.1341 4.31964 14.7965 4.1082 15.4809 4.03727C16.1654 3.96634 16.8571 4.03745 17.5128 4.24614C18.1685 4.45484 18.774 4.79662 19.2915 5.25011C19.8091 5.7036 20.2274 6.25903 20.5204 6.88164C20.8134 7.50425 20.9747 8.18063 20.9943 8.86846C21.0139 9.55628 20.8913 10.2407 20.6341 10.879C20.377 11.5173 19.9909 12.0956 19.5 12.5777"
+                                                    stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_6_211">
+                                                    <rect width="24" height="24" fill="white"
+                                                        transform="translate(0 -0.000244141)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                    <div>200</div>
+                                </div>
+                            </div>
+                            <!-- uper rating end -->
+                            <div>
+                                <h2 class="font-extrabold ">World Cup Flags Football</h2>
+                                <p class=" font-medium text-xs bold text-[#13131899]"> Consectetur adipiscing
+                                    aliquam<br> nullam proin. </p>
+                            </div>
+                            <!-- price and sell gari here start and flex -->
+                            <div class="flex gap-6">
+                                <p class="text-[#FF4240]">Price - $22.00</p>
+                                <div class="flex">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0_7_298)">
+                                                <path
+                                                    d="M4 18.9993C4 19.5297 4.21071 20.0384 4.58579 20.4135C4.96086 20.7886 5.46957 20.9993 6 20.9993C6.53043 20.9993 7.03914 20.7886 7.41421 20.4135C7.78929 20.0384 8 19.5297 8 18.9993C8 18.4688 7.78929 17.9601 7.41421 17.5851C7.03914 17.21 6.53043 16.9993 6 16.9993C5.46957 16.9993 4.96086 17.21 4.58579 17.5851C4.21071 17.9601 4 18.4688 4 18.9993Z"
+                                                    stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M12 16.9993H6V2.99927H4" stroke="#89898B" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6 4.99927L20 5.99927L19.284 11.0103M14 12.9993H6"
+                                                    stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M21.121 20.1203C21.5406 19.7007 21.8265 19.1662 21.9423 18.5842C22.0581 18.0023 21.9988 17.399 21.7717 16.8508C21.5447 16.3026 21.1602 15.834 20.6668 15.5043C20.1734 15.1746 19.5934 14.9986 19 14.9986C18.4066 14.9986 17.8266 15.1746 17.3332 15.5043C16.8398 15.834 16.4553 16.3026 16.2283 16.8508C16.0012 17.399 15.9419 18.0023 16.0577 18.5842C16.1735 19.1662 16.4594 19.7007 16.879 20.1203C17.297 20.5393 18.004 21.1653 19 21.9993C20.051 21.1093 20.759 20.4833 21.121 20.1203Z"
+                                                    stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M19 17.9993V18.0093" stroke="#89898B" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_7_298">
+                                                    <rect width="24" height="24" fill="white"
+                                                        transform="translate(0 -0.000732422)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                    <p class="text-[#13131880]">Delivery Fee : Free</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+
+                    </div>
+                </div>
+                <div>
+                    <div class="flex p-6 border-2 border-[#1313181A] rounded-xl max-w-96 gap-4">
+                        <div class="card card-compact  bg-base-100  ">
+                            <!-- main card er image -->
+                            <!-- <div class="flex"> -->
+                            <div>
+                                <figure><img src="./Images/8.png" alt="Shoes" /></figure>
+                            </div>
+                        </div>
+                        <!-- card er image desine end -->
+                        <div class="card card-compact w-52 bg-base-100 ">
+                            <!-- uper rating start -->
+                            <div class="flex gap-4 ">
+                                <div class="flex gap-2">
+                                    <!-- here star and 5.0  -->
+                                    <div> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0_6_192)">
+                                                <path
+                                                    d="M12 17.7498L5.82799 20.9948L7.00699 14.1218L2.00699 9.25477L8.90699 8.25477L11.993 2.00177L15.079 8.25477L21.979 9.25477L16.979 14.1218L18.158 20.9948L12 17.7498Z"
+                                                    fill="#F99808" stroke="#F99808" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_6_192">
+                                                    <rect width="24" height="24" fill="white"
+                                                        transform="translate(0 -0.000244141)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                    <div>5.0</div>
+                                </div>
+                                <!-- here star and 5.0 end -->
+                                <!-- here eye and 20 start -->
+                                <div class="flex gap-2">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0_6_207)">
+                                                <path
+                                                    d="M10 11.9998C10 12.5302 10.2107 13.0389 10.5858 13.414C10.9609 13.789 11.4696 13.9998 12 13.9998C12.5304 13.9998 13.0391 13.789 13.4142 13.414C13.7893 13.0389 14 12.5302 14 11.9998C14 11.4693 13.7893 10.9606 13.4142 10.5855C13.0391 10.2105 12.5304 9.99976 12 9.99976C11.4696 9.99976 10.9609 10.2105 10.5858 10.5855C10.2107 10.9606 10 11.4693 10 11.9998Z"
+                                                    stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M21 11.9998C18.6 15.9998 15.6 17.9998 12 17.9998C8.4 17.9998 5.4 15.9998 3 11.9998C5.4 7.99976 8.4 5.99976 12 5.99976C15.6 5.99976 18.6 7.99976 21 11.9998Z"
+                                                    stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_6_207">
+                                                    <rect width="24" height="24" fill="white"
+                                                        transform="translate(0 -0.000244141)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                    <div>20</div>
+                                </div>
+                                <!-- here eye and 20 send -->
+                                <!-- here love and 20o start -->
+                                <div class="flex gap-2">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0_6_211)">
+                                                <path
+                                                    d="M19.5 12.5717L12 19.9997L4.5 12.5717C4.0053 12.0904 3.61564 11.5118 3.35554 10.8724C3.09545 10.233 2.97056 9.5467 2.98873 8.85668C3.00691 8.16667 3.16776 7.48789 3.46115 6.86309C3.75455 6.23829 4.17413 5.681 4.69348 5.22633C5.21283 4.77165 5.8207 4.42944 6.47881 4.22123C7.13691 4.01302 7.831 3.94333 8.51736 4.01655C9.20373 4.08977 9.8675 4.30431 10.4669 4.64666C11.0662 4.98901 11.5882 5.45175 12 6.00575C12.4135 5.45577 12.9361 4.99707 13.5351 4.65835C14.1341 4.31964 14.7965 4.1082 15.4809 4.03727C16.1654 3.96634 16.8571 4.03745 17.5128 4.24614C18.1685 4.45484 18.774 4.79662 19.2915 5.25011C19.8091 5.7036 20.2274 6.25903 20.5204 6.88164C20.8134 7.50425 20.9747 8.18063 20.9943 8.86846C21.0139 9.55628 20.8913 10.2407 20.6341 10.879C20.377 11.5173 19.9909 12.0956 19.5 12.5777"
+                                                    stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_6_211">
+                                                    <rect width="24" height="24" fill="white"
+                                                        transform="translate(0 -0.000244141)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                    <div>200</div>
+                                </div>
+                            </div>
+                            <!-- uper rating end -->
+                            <div>
+                                <h2 class="font-extrabold ">World Cup Flags Football</h2>
+                                <p class=" font-medium text-xs bold text-[#13131899]"> Consectetur adipiscing
+                                    aliquam<br> nullam proin. </p>
+                            </div>
+                            <!-- price and sell gari here start and flex -->
+                            <div class="flex gap-6">
+                                <p class="text-[#FF4240]">Price - $22.00</p>
+                                <div class="flex">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0_7_298)">
+                                                <path
+                                                    d="M4 18.9993C4 19.5297 4.21071 20.0384 4.58579 20.4135C4.96086 20.7886 5.46957 20.9993 6 20.9993C6.53043 20.9993 7.03914 20.7886 7.41421 20.4135C7.78929 20.0384 8 19.5297 8 18.9993C8 18.4688 7.78929 17.9601 7.41421 17.5851C7.03914 17.21 6.53043 16.9993 6 16.9993C5.46957 16.9993 4.96086 17.21 4.58579 17.5851C4.21071 17.9601 4 18.4688 4 18.9993Z"
+                                                    stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M12 16.9993H6V2.99927H4" stroke="#89898B" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6 4.99927L20 5.99927L19.284 11.0103M14 12.9993H6"
+                                                    stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M21.121 20.1203C21.5406 19.7007 21.8265 19.1662 21.9423 18.5842C22.0581 18.0023 21.9988 17.399 21.7717 16.8508C21.5447 16.3026 21.1602 15.834 20.6668 15.5043C20.1734 15.1746 19.5934 14.9986 19 14.9986C18.4066 14.9986 17.8266 15.1746 17.3332 15.5043C16.8398 15.834 16.4553 16.3026 16.2283 16.8508C16.0012 17.399 15.9419 18.0023 16.0577 18.5842C16.1735 19.1662 16.4594 19.7007 16.879 20.1203C17.297 20.5393 18.004 21.1653 19 21.9993C20.051 21.1093 20.759 20.4833 21.121 20.1203Z"
+                                                    stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M19 17.9993V18.0093" stroke="#89898B" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_7_298">
+                                                    <rect width="24" height="24" fill="white"
+                                                        transform="translate(0 -0.000732422)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                    <p class="text-[#13131880]">Delivery Fee : Free</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+
+                    </div>
+                </div>
+                <div>
+                    <div class="flex p-6 border-2 border-[#1313181A] rounded-xl max-w-96 gap-4">
+                        <div class="card card-compact  bg-base-100  ">
+                            <!-- main card er image -->
+                            <!-- <div class="flex"> -->
+                            <div>
+                                <figure><img src="./Images/9.png" alt="Shoes" /></figure>
+                            </div>
+                        </div>
+                        <!-- card er image desine end -->
+                        <div class="card card-compact w-52 bg-base-100 ">
+                            <!-- uper rating start -->
+                            <div class="flex gap-4 ">
+                                <div class="flex gap-2">
+                                    <!-- here star and 5.0  -->
+                                    <div> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0_6_192)">
+                                                <path
+                                                    d="M12 17.7498L5.82799 20.9948L7.00699 14.1218L2.00699 9.25477L8.90699 8.25477L11.993 2.00177L15.079 8.25477L21.979 9.25477L16.979 14.1218L18.158 20.9948L12 17.7498Z"
+                                                    fill="#F99808" stroke="#F99808" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_6_192">
+                                                    <rect width="24" height="24" fill="white"
+                                                        transform="translate(0 -0.000244141)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                    <div>5.0</div>
+                                </div>
+                                <!-- here star and 5.0 end -->
+                                <!-- here eye and 20 start -->
+                                <div class="flex gap-2">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0_6_207)">
+                                                <path
+                                                    d="M10 11.9998C10 12.5302 10.2107 13.0389 10.5858 13.414C10.9609 13.789 11.4696 13.9998 12 13.9998C12.5304 13.9998 13.0391 13.789 13.4142 13.414C13.7893 13.0389 14 12.5302 14 11.9998C14 11.4693 13.7893 10.9606 13.4142 10.5855C13.0391 10.2105 12.5304 9.99976 12 9.99976C11.4696 9.99976 10.9609 10.2105 10.5858 10.5855C10.2107 10.9606 10 11.4693 10 11.9998Z"
+                                                    stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M21 11.9998C18.6 15.9998 15.6 17.9998 12 17.9998C8.4 17.9998 5.4 15.9998 3 11.9998C5.4 7.99976 8.4 5.99976 12 5.99976C15.6 5.99976 18.6 7.99976 21 11.9998Z"
+                                                    stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_6_207">
+                                                    <rect width="24" height="24" fill="white"
+                                                        transform="translate(0 -0.000244141)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                    <div>20</div>
+                                </div>
+                                <!-- here eye and 20 send -->
+                                <!-- here love and 20o start -->
+                                <div class="flex gap-2">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0_6_211)">
+                                                <path
+                                                    d="M19.5 12.5717L12 19.9997L4.5 12.5717C4.0053 12.0904 3.61564 11.5118 3.35554 10.8724C3.09545 10.233 2.97056 9.5467 2.98873 8.85668C3.00691 8.16667 3.16776 7.48789 3.46115 6.86309C3.75455 6.23829 4.17413 5.681 4.69348 5.22633C5.21283 4.77165 5.8207 4.42944 6.47881 4.22123C7.13691 4.01302 7.831 3.94333 8.51736 4.01655C9.20373 4.08977 9.8675 4.30431 10.4669 4.64666C11.0662 4.98901 11.5882 5.45175 12 6.00575C12.4135 5.45577 12.9361 4.99707 13.5351 4.65835C14.1341 4.31964 14.7965 4.1082 15.4809 4.03727C16.1654 3.96634 16.8571 4.03745 17.5128 4.24614C18.1685 4.45484 18.774 4.79662 19.2915 5.25011C19.8091 5.7036 20.2274 6.25903 20.5204 6.88164C20.8134 7.50425 20.9747 8.18063 20.9943 8.86846C21.0139 9.55628 20.8913 10.2407 20.6341 10.879C20.377 11.5173 19.9909 12.0956 19.5 12.5777"
+                                                    stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_6_211">
+                                                    <rect width="24" height="24" fill="white"
+                                                        transform="translate(0 -0.000244141)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                    <div>200</div>
+                                </div>
+                            </div>
+                            <!-- uper rating end -->
+                            <div>
+                                <h2 class="font-extrabold ">World Cup Flags Football</h2>
+                                <p class=" font-medium text-xs bold text-[#13131899]"> Consectetur adipiscing
+                                    aliquam<br> nullam proin. </p>
+                            </div>
+                            <!-- price and sell gari here start and flex -->
+                            <div class="flex gap-6">
+                                <p class="text-[#FF4240]">Price - $22.00</p>
+                                <div class="flex">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0_7_298)">
+                                                <path
+                                                    d="M4 18.9993C4 19.5297 4.21071 20.0384 4.58579 20.4135C4.96086 20.7886 5.46957 20.9993 6 20.9993C6.53043 20.9993 7.03914 20.7886 7.41421 20.4135C7.78929 20.0384 8 19.5297 8 18.9993C8 18.4688 7.78929 17.9601 7.41421 17.5851C7.03914 17.21 6.53043 16.9993 6 16.9993C5.46957 16.9993 4.96086 17.21 4.58579 17.5851C4.21071 17.9601 4 18.4688 4 18.9993Z"
+                                                    stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M12 16.9993H6V2.99927H4" stroke="#89898B" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6 4.99927L20 5.99927L19.284 11.0103M14 12.9993H6"
+                                                    stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M21.121 20.1203C21.5406 19.7007 21.8265 19.1662 21.9423 18.5842C22.0581 18.0023 21.9988 17.399 21.7717 16.8508C21.5447 16.3026 21.1602 15.834 20.6668 15.5043C20.1734 15.1746 19.5934 14.9986 19 14.9986C18.4066 14.9986 17.8266 15.1746 17.3332 15.5043C16.8398 15.834 16.4553 16.3026 16.2283 16.8508C16.0012 17.399 15.9419 18.0023 16.0577 18.5842C16.1735 19.1662 16.4594 19.7007 16.879 20.1203C17.297 20.5393 18.004 21.1653 19 21.9993C20.051 21.1093 20.759 20.4833 21.121 20.1203Z"
+                                                    stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M19 17.9993V18.0093" stroke="#89898B" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_7_298">
+                                                    <rect width="24" height="24" fill="white"
+                                                        transform="translate(0 -0.000732422)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                    <p class="text-[#13131880]">Delivery Fee:Free</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+
+                    </div>
+                </div>
+                <div>
+                    <div class="flex p-6 border-2 border-[#1313181A] rounded-xl max-w-96 gap-4">
+                        <div class="card card-compact  bg-base-100  ">
+                            <!-- main card er image -->
+                            <!-- <div class="flex"> -->
+                            <div>
+                                <figure><img src="./Images/10.png" alt="Shoes" /></figure>
+                            </div>
+                        </div>
+                        <!-- card er image desine end -->
+                        <div class="card card-compact w-52 bg-base-100 ">
+                            <!-- uper rating start -->
+                            <div class="flex gap-4 ">
+                                <div class="flex gap-2">
+                                    <!-- here star and 5.0  -->
+                                    <div> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0_6_192)">
+                                                <path
+                                                    d="M12 17.7498L5.82799 20.9948L7.00699 14.1218L2.00699 9.25477L8.90699 8.25477L11.993 2.00177L15.079 8.25477L21.979 9.25477L16.979 14.1218L18.158 20.9948L12 17.7498Z"
+                                                    fill="#F99808" stroke="#F99808" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_6_192">
+                                                    <rect width="24" height="24" fill="white"
+                                                        transform="translate(0 -0.000244141)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                    <div>5.0</div>
+                                </div>
+                                <!-- here star and 5.0 end -->
+                                <!-- here eye and 20 start -->
+                                <div class="flex gap-2">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0_6_207)">
+                                                <path
+                                                    d="M10 11.9998C10 12.5302 10.2107 13.0389 10.5858 13.414C10.9609 13.789 11.4696 13.9998 12 13.9998C12.5304 13.9998 13.0391 13.789 13.4142 13.414C13.7893 13.0389 14 12.5302 14 11.9998C14 11.4693 13.7893 10.9606 13.4142 10.5855C13.0391 10.2105 12.5304 9.99976 12 9.99976C11.4696 9.99976 10.9609 10.2105 10.5858 10.5855C10.2107 10.9606 10 11.4693 10 11.9998Z"
+                                                    stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M21 11.9998C18.6 15.9998 15.6 17.9998 12 17.9998C8.4 17.9998 5.4 15.9998 3 11.9998C5.4 7.99976 8.4 5.99976 12 5.99976C15.6 5.99976 18.6 7.99976 21 11.9998Z"
+                                                    stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_6_207">
+                                                    <rect width="24" height="24" fill="white"
+                                                        transform="translate(0 -0.000244141)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                    <div>20</div>
+                                </div>
+                                <!-- here eye and 20 send -->
+                                <!-- here love and 20o start -->
+                                <div class="flex gap-2">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0_6_211)">
+                                                <path
+                                                    d="M19.5 12.5717L12 19.9997L4.5 12.5717C4.0053 12.0904 3.61564 11.5118 3.35554 10.8724C3.09545 10.233 2.97056 9.5467 2.98873 8.85668C3.00691 8.16667 3.16776 7.48789 3.46115 6.86309C3.75455 6.23829 4.17413 5.681 4.69348 5.22633C5.21283 4.77165 5.8207 4.42944 6.47881 4.22123C7.13691 4.01302 7.831 3.94333 8.51736 4.01655C9.20373 4.08977 9.8675 4.30431 10.4669 4.64666C11.0662 4.98901 11.5882 5.45175 12 6.00575C12.4135 5.45577 12.9361 4.99707 13.5351 4.65835C14.1341 4.31964 14.7965 4.1082 15.4809 4.03727C16.1654 3.96634 16.8571 4.03745 17.5128 4.24614C18.1685 4.45484 18.774 4.79662 19.2915 5.25011C19.8091 5.7036 20.2274 6.25903 20.5204 6.88164C20.8134 7.50425 20.9747 8.18063 20.9943 8.86846C21.0139 9.55628 20.8913 10.2407 20.6341 10.879C20.377 11.5173 19.9909 12.0956 19.5 12.5777"
+                                                    stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_6_211">
+                                                    <rect width="24" height="24" fill="white"
+                                                        transform="translate(0 -0.000244141)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                    <div>200</div>
+                                </div>
+                            </div>
+                            <!-- uper rating end -->
+                            <div>
+                                <h2 class="font-extrabold ">World Cup Flags Football</h2>
+                                <p class=" font-medium text-xs bold text-[#13131899]"> Consectetur adipiscing
+                                    aliquam<br> nullam proin. </p>
+                            </div>
+                            <!-- price and sell gari here start and flex -->
+                            <div class="flex gap-6">
+                                <p class="text-[#FF4240]">Price - $22.00</p>
+                                <div class="flex">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <g clip-path="url(#clip0_7_298)">
+                                                <path
+                                                    d="M4 18.9993C4 19.5297 4.21071 20.0384 4.58579 20.4135C4.96086 20.7886 5.46957 20.9993 6 20.9993C6.53043 20.9993 7.03914 20.7886 7.41421 20.4135C7.78929 20.0384 8 19.5297 8 18.9993C8 18.4688 7.78929 17.9601 7.41421 17.5851C7.03914 17.21 6.53043 16.9993 6 16.9993C5.46957 16.9993 4.96086 17.21 4.58579 17.5851C4.21071 17.9601 4 18.4688 4 18.9993Z"
+                                                    stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M12 16.9993H6V2.99927H4" stroke="#89898B" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6 4.99927L20 5.99927L19.284 11.0103M14 12.9993H6"
+                                                    stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M21.121 20.1203C21.5406 19.7007 21.8265 19.1662 21.9423 18.5842C22.0581 18.0023 21.9988 17.399 21.7717 16.8508C21.5447 16.3026 21.1602 15.834 20.6668 15.5043C20.1734 15.1746 19.5934 14.9986 19 14.9986C18.4066 14.9986 17.8266 15.1746 17.3332 15.5043C16.8398 15.834 16.4553 16.3026 16.2283 16.8508C16.0012 17.399 15.9419 18.0023 16.0577 18.5842C16.1735 19.1662 16.4594 19.7007 16.879 20.1203C17.297 20.5393 18.004 21.1653 19 21.9993C20.051 21.1093 20.759 20.4833 21.121 20.1203Z"
+                                                    stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M19 17.9993V18.0093" stroke="#89898B" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_7_298">
+                                                    <rect width="24" height="24" fill="white"
+                                                        transform="translate(0 -0.000732422)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                    <p class="text-[#13131880]">Delivery Fee : Free</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- section 4 FAQ -->
 
-        <section class="container mx-auto border-2 border-[#1313181A] rounded-xl p-8">
-            <div class="lg:flex gap-6">
+        <section class="container mx-auto border-2 border-[#1313181A] rounded-xl p-8 mt-8">
+            <div class="mt-8 border-b-2 border-t-2 border-t-neutral-300 border-dotted pt-6 pb-6">
+                <h2 class="text-center font-extrabold ">Clients Question</h2>
+                <p class="text-center font-semibold text-[#13131899]"> Your all question answer here . please click our acordiaon button and take your ans:adipiscing aliquam  <br> turpis placerat Purus urna in sit nullam proin. </p>
+
+            </div>
+            <div class="lg:flex gap-6 mt-">
                 <img src="./Images/11.png" alt="">
                 <div>
                     <div class="collapse collapse-plus">
@@ -225,7 +965,8 @@
                             <p>However, be aware that a possible down-side to the 20-word sentence is clunky, jerky
                                 sentences. This only applies though</p>
                         </div>
-                    </div><hr>
+                    </div>
+                    <hr>
                     <div class="collapse collapse-plus ">
                         <input type="radio" name="my-accordion-3" />
                         <div class="collapse-title text-xl font-medium">
@@ -234,7 +975,8 @@
                         <div class="collapse-content">
                             <p>So if you are aiming for clear, concise, comprehensible writing (and reading)</p>
                         </div>
-                    </div><hr>
+                    </div>
+                    <hr>
                     <div class="collapse collapse-plus ">
                         <input type="radio" name="my-accordion-3" />
                         <div class="collapse-title text-xl font-medium">
@@ -243,7 +985,8 @@
                         <div class="collapse-content">
                             <p>possible down-side to the 20-word sentence is clunky, jerky sentences. </p>
                         </div>
-                    </div><hr>
+                    </div>
+                    <hr>
                     <div class="collapse collapse-plus ">
                         <input type="radio" name="my-accordion-3" />
                         <div class="collapse-title text-xl font-medium">
@@ -252,7 +995,8 @@
                         <div class="collapse-content">
                             <p>So if you are aiming for clear, concise, comprehensible writing (and reading)</p>
                         </div>
-                    </div><hr>
+                    </div>
+                    <hr>
                     <div class="collapse collapse-plus ">
                         <input type="radio" name="my-accordion-3" />
                         <div class="collapse-title text-xl font-medium">
@@ -260,8 +1004,9 @@
                         </div>
                         <div class="collapse-content">
                             <p>possible down-side to the 20-word sentence is clunky, jerky sentences. </p>
-                    </div><hr>
-                    <div class="collapse collapse-plus ">
+                        </div>
+                        <hr>
+                        <div class="collapse collapse-plus ">
                             <input type="radio" name="my-accordion-3" />
                             <div class="collapse-title text-xl font-medium">
                                 Pricings
@@ -269,107 +1014,160 @@
                             <div class="collapse-content">
                                 <p>possible down-side to the 20-word sentence is clunky, jerky sentences. </p>
                             </div>
+                        </div>
                     </div>
-                </div><hr>
-            </div>
+                    <hr>
+                </div>
         </section>
-        <section class="container mx-auto">
+        <!-- get tuch section  ..(problem text aling center ) -->
+        <section class="container mx-auto mt-8">
             <!-- hed and p.-->
             <div>
-                <div class="m-5">  
-                 
+                <div class="mt-8 border-b-2 border-t-2 border-t-neutral-300 border-dotted pt-6 pb-6">
+
                     <h2 class="text-center font-extrabold ">Get In Touch</h2>
-                    <p class="text-center font-semibold text-[#13131899]">However, be aware that a possible down-side to the 20-word sentence is clunky, <br> jerky sentences. This only applies though if you don't go back and massage your work  </p>
-    
+                    <p class="text-center font-semibold text-[#13131899]">However, be aware that a possible down-side to
+                        the 20-word sentence is clunky, <br> jerky sentences. This only applies though if you don't go
+                        back and massage your work </p>
+
                 </div>
                 <!-- fast div 3 pic-->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mx-auto mt-8">
                     <!-- here 3div -->
-                    <div class=" border-2 border-[#1313181A] rounded-xl p-8  ">
-                        <div>
-                            <div class="bg-[#BCED6D1A] w-80 h-52 rounded-xl ju mb-4">
-                            <img src="./Images/call-Group-1 .png" alt="">
-                            <p class="font-semibold text-[#13131899]">Phone number :</p>
-                            <h6 class="text-[#131318] font-semibold">+880 1729007747</h6>
-                        </div>
-                        <div class="bg-[#FDDD5F1A] rounded-xl  w-80 h-52 mb-4">
-                            <img src="./Images/call-Group-2 .png" alt="">
-                            <p class="font-semibold text-[#13131899]">Email :</p>
-                            <h6 class="text-[#131318] font-semibold">mdhamza9407510@gmail.com</h6>
-                        </div>
-                        <div class="bg-[#629CF31A] rounded-xl  w-80 h-52 ">
-                            <img src="./Images/call-Group-3 .png" alt="">
-                            <p class="font-semibold text-[#13131899]">Location :</p>
-                            <h6 class="text-[#131318] font-semibold"> 152/1 Mohakhali Wireless Gate</h6>
-                        </div>
+                    <div class=" border-2 border-[#1313181A] rounded-xl ml-6 mr-6 lg:p-8   ">
+                        <div class="">
+                            <div class="bg-[#BCED6D1A] w-80 h-52 rounded-xl  mb-4">
+                                <img src="./Images/call-Group-1 .png" alt="">
+                                <p class="font-semibold text-[#13131899]">Phone number :</p>
+                                <h6 class="text-[#131318] font-semibold">+880 1729007747</h6>
+                            </div>
+                            <div class="bg-[#FDDD5F1A] rounded-xl  w-80 h-52 mb-4">
+                                <img src="./Images/call-Group-2 .png" alt="">
+                                <p class="font-semibold text-[#13131899]">Email :</p>
+                                <h6 class="text-[#131318] font-semibold">mdhamza9407510@gmail.com</h6>
+                            </div>
+                            <div class="bg-[#629CF31A] rounded-xl  w-80 h-52 ">
+                                <img src="./Images/call-Group-3 .png" alt="">
+                                <p class="font-semibold text-[#13131899]">Location :</p>
+                                <h6 class="text-[#131318] font-semibold"> 152/1 Mohakhali Wireless Gate</h6>
+                            </div>
                         </div>
                     </div>
                     <!-- second div 3 pic-->
-                    
-                        
-                            <!-- <div class="hero-content flex-col lg:flex-row-reverse">
+
+
+                    <!-- <div class="hero-content flex-col lg:flex-row-reverse">
                                -->
-                              <div class="card shrink-0 w-full p-5  ">
-                               
-                                    <!-- fast div name and email  -->
-                                  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                                    <div class="form-control">   
-                                        <label class="label">
-                                          <span class="label-text">Your Name</span>
-                                        </label>
-                                        <input type="text" placeholder="Enter Your Name" class="input input-bordered" required />
-                                      </div>
-                                      <div class="form-control">
-                                        <label class="label">
-                                          <span class="label-text">Your Email</span>
-                                        </label>
-                                        <input type="email" placeholder="Enter Your Email" class="input input-bordered" required />
-                                      </div>
-                                  </div>
-                                  <!-- second div subject and phn  -->
-                                  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
-                                    <div class="form-control">   
-                                        <label class="label">
-                                          <span class="label-text">subject Name</span>
-                                        </label>
-                                        <input type="text" placeholder="Enter Your subject" class="input input-bordered" required />
-                                      </div>
-                                      <div class="form-control">
-                                        <label class="label">
-                                          <span class="label-text">Phone Number</span>
-                                        </label>
-                                        <input type="text" placeholder="Enter Your Phone Number" class="input input-bordered" required />
-                                      </div>
-                                  </div>
-                                  <div class="form-control mt-6 ">
-                                    <label class="label">
-                                      <span class="label-text">Message</span>
-                                    </label>
-                                    <input class="bg-[#13131808] h-72 rounded-xl" type="text" placeholder ="writing a Message" class="input input-bordered align-top" />
-                                  </div>
-                                  <div class="form-control mt-6">
-                                    <button class="btn btn-error text-white">Send Message</button>
-                                  </div>
-                                
-                              </div>
-                            <!-- </div>
+                    <div class="card shrink-0 w-full p-5  ">
+
+                        <!-- fast div name and email  -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Your Name</span>
+                                </label>
+                                <input type="text" placeholder="Enter Your Name" class="input input-bordered"
+                                    required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Your Email</span>
+                                </label>
+                                <input type="email" placeholder="Enter Your Email" class="input input-bordered"
+                                    required />
+                            </div>
+                        </div>
+                        <!-- second div subject and phn  -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">subject Name</span>
+                                </label>
+                                <input type="text" placeholder="Enter Your subject" class="input input-bordered"
+                                    required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Phone Number</span>
+                                </label>
+                                <input type="text" placeholder="Enter Your Phone Number" class="input input-bordered"
+                                    required />
+                            </div>
+                        </div>
+                        <div class="form-control mt-6 ">
+                            <label class="label">
+                                <span class="label-text">Message</span>
+                            </label>
+                            <input class="bg-[#13131808] h-72 rounded-xl" type="text" placeholder="writing a Message"
+                                class="input input-bordered align-top" />
+                        </div>
+                        <div class="form-control mt-20">
+                            <button class="btn btn-error text-white">Send Message</button>
+                        </div>
+
+                    </div>
+                    <!-- </div>
                            <!-- social media -->
-                       
+
                 </div>
-                <div class=" text-center  mx-auto bg-[#13131808] justify-center h-36 rounded-xl mt-6 ">
+                <div class=" text-center  mx-auto bg-[#13131808] justify-center h-36 rounded-xl mt-9 ml-4 mr-4 lg:pl-1">
                     <h3 class="mt-6 pt-5 text-[#131318] font-extrabold">social Media</h3>
                     <div class="">
-                        <img class="center pl-32 lg:pl-96 lg:ml-80 mt-6 lg:px-96" src="./Images/sm.svg" alt="">
+                        <img class="center pl-32 lg:pl-72 lg:ml-64 mt-6 lg:px-96" src="./Images/sm.svg" alt="">
                     </div>
-                   </div> 
+                </div>
             </div>
-            
-            
+
+
         </section>
     </main>
-    <footer>
 
+    <footer class="footer p-10 bg-[#131318] text-base-content mt-10">
+        <div>
+            <h2 class="text-center font-extrabold text-[#FFF] ">Get In Touch</h2>
+            <p class="font-semibold text-[#FFFFFF99]">However, be aware <br>
+                the 20-word sentence is clunky, <br> jerky sentences. This only applies <br> though if you don't go
+            </p>
+            <div class="flex gap-3 mt-5">
+                <img src="./Images/phn.png" alt="">
+                <p><span class="text-[#FFFFFF99]">hockeys@support.com</span></p>
+            </div>
+            <div class="flex gap-3">
+                <img src="./Images/gmail.png" alt="">
+                <p><span class="text-[#FFFFFF99]">(+62) 123-321-543</span></p>
+            </div>
+
+        </div>
+       <!-- <div class="grid grid-cols lg:grid-cols-3"> -->
+        <nav class=" text-[#FFFFFF99]">
+            <header class="footer-title text-[#FFF]">About us</header>
+            <a class="link link-hover">Leadership</a>
+            <a class="link link-hover">Careers</a>
+            <a class="link link-hover">News & Article</a>
+            <a class="link link-hover">Legal Notice</a>
+        </nav>
+
+
+        <nav class=" text-[#FFFFFF99]">
+            <header class="footer-title text-[#FFF]">Company</header>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </nav>
+
+
+        <nav class=" text-[#FFFFFF99]">
+            <header class="footer-title "><span class="text-[#FFF]">Services</span></header>
+            <a class="link link-hover">Academy </a>
+            <a class="link link-hover">Group Lesson</a>
+            <a class="link link-hover">Private Lesson</a>
+            <a class="link link-hover">Hockeys for kids</a>
+            <a class="link link-hover">Hockeys for Adult</a>
+        </nav>
+       <!-- </div> -->
     </footer>
+
 </body>
 
 </html>
